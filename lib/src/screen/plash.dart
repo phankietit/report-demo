@@ -10,9 +10,14 @@ class _PlashState extends State<Plash> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    Future.delayed(const Duration(milliseconds: 1000), () {
+      _checkLogin();
+    });
   }
 
-  _checkLogin() {}
+  _checkLogin() {
+    Navigator.pushNamed(context, '/login');
+  }
 
   _setPage() {
     Navigator.pushNamed(context, '/login');
@@ -24,8 +29,6 @@ class _PlashState extends State<Plash> {
     // TODO: implement build
     return Scaffold(
       body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
         alignment: Alignment.center,
         decoration: BoxDecoration(
             image: DecorationImage(

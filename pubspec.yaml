@@ -54,7 +54,13 @@ flutter:
   assets:
     - lib/src/asset/bg_top.jpg
     - lib/src/asset/favicon.png
-
+  fonts:
+    - family: HelveticaNeuLight
+      fonts:
+        - asset: assets/fonts/helveticaneuelight.ttf
+    - family: HelveticaNeu
+      fonts:
+        - asset: assets/fonts/helveticaneue.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
